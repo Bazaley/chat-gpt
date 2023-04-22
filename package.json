@@ -1,29 +1,23 @@
 {
-  "name": "project-movie",
+  "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Bazaley.github.io/filmoteka",
+  "homepage": "https://Bazaley.github.io/ChatGptBooster",
   "scripts": {
     "start": "parcel src/*.html --port 1212",
-    "build": "parcel build src/*.html --public-url /filmoteka/"
+    "build": "parcel build src/*.html --public-url /ChatGptBooster/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bazaley/filmoteka.git"
+    "url": "git+https://github.com/Bazaley/ChatGptBooster.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bazaley/filmoteka/issues"
+    "url": "https://github.com/Bazaley/ChatGptBooster/issues"
   },
   "dependencies": {
-    "@firebase/firestore": "^3.7.2",
-    "axios": "^1.1.3",
-    "firebase": "^9.13.0",
-    "firebaseui": "^6.0.1",
-    "lodash.debounce": "^4.0.8",
-    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
