@@ -1,0 +1,43 @@
+.hints {
+  background: radial-gradient(circle, #032105 0, #032105 35%, #000 100%);
+}
+
+.hints__title {
+  font-size: 25px;
+  color: $color-8;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hints__description {
+  font-size: 17px;
+  color: $color-8;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.hints__collections {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hints__list {
+  padding: 20px;
+  height: max-content;
+  background-color: $color-8;
+  border-radius: 10px;
+  text-align: start;
+}
+
+.hints__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.hints__item {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hints__price {
+}

@@ -1,0 +1,22 @@
+.master__title {
+  margin-bottom: 30px;
+}
+
+.master__list {
+  display: flex;
+}
+
+.master__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.master__item {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.master__number {
+  font-size: 25px;
+  font-weight: 800;
+}

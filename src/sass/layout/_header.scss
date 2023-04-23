@@ -6,10 +6,18 @@
     padding: 20px 0;
   }
 }
+.slide-wrapper {
+  width: 100vw;
+  overflow: hidden;
+}
 
 .slide {
+  position: relative;
+  left: 380px;
+
   display: flex;
   justify-content: space-between;
+  animation: slider 15s infinite alternate ease-in;
 }
 
 .paragraph {
@@ -19,5 +27,17 @@
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 380px;
+  }
+  50% {
+    left: -455px;
+  }
+  100% {
+    left: 380px;
   }
 }

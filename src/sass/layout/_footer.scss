@@ -1,3 +1,40 @@
 .footer {
   background-color: #000;
 }
+
+.copyright {
+  font-size: 16px;
+  color: $color-8;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__item:not(:last-child) {
+  position: relative;
+  margin-right: 20px;
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    right: -12px;
+    width: 1px;
+    height: 100%;
+    background-color: $color-8;
+  }
+}
+
+.footer__link {
+  color: $color-8;
+}
+
+.footer__description {
+  margin-top: 30px;
+  color: $color-8;
+}

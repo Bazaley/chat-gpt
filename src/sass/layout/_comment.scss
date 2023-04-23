@@ -1,0 +1,11 @@
+.comment {
+  background: radial-gradient(circle, #032105 0, #032105 35%, #000 100%);
+}
+
+.comment__title {
+  font-size: 25px;
+  color: $color-8;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

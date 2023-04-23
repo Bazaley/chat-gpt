@@ -1,3 +1,34 @@
-.questions {
-  background-color: radial-gradient(circle, #032105 0, #032105 35%, #000 100%);
+.questions__title {
+  margin-bottom: 30px;
+}
+
+.questions__list {
+  text-align: start;
+}
+
+.questions__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.questions__item-description {
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: $color-8;
+  cursor: pointer;
+}
+
+.questions__item-description::before {
+  content: '+';
+}
+
+.sub-description {
+  display: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.is-hidden {
+  display: block;
+  background-color: gray;
 }
