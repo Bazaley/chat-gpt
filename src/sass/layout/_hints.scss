@@ -3,7 +3,7 @@
 }
 
 .hints__title {
-  font-size: 25px;
+  font-size: 18px;
   color: $color-8;
   line-height: 1.4em;
   margin-bottom: 20px;
@@ -11,15 +11,40 @@
 }
 
 .hints__description {
-  font-size: 17px;
+  font-size: 14px;
   color: $color-8;
   line-height: 1.4em;
   margin-bottom: 20px;
 }
 
+.hints__price {
+  @media screen and (max-width: 767px) {
+    height: 90px;
+  }
+}
+
+.hints__right iframe {
+  @media screen and (max-width: 767px) {
+    width: 270px;
+    height: 150px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 90vw;
+    height: 500px;
+  }
+}
+
 .hints__collections {
-  display: flex;
-  flex-direction: row-reverse;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .hints__list {
@@ -28,6 +53,16 @@
   background-color: $color-8;
   border-radius: 10px;
   text-align: start;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    padding: 30px;
+    width: 400px;
+  }
 }
 
 .hints__item:not(:last-child) {
@@ -37,7 +72,31 @@
 .hints__item {
   font-size: 14px;
   font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .hints__price {
+  height: 150px;
+}
+
+.hints__discount {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.hints__item {
+  &::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    top: 1;
+    width: 15px;
+    height: 13px;
+    background-image: url(../images/check-mark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

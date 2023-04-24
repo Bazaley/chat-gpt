@@ -15,7 +15,7 @@
   margin: 20px 0;
   font-size: 11px;
   font-weight: 400;
-  color: #00c340;
+  color: $btn-color;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -71,7 +71,7 @@
   padding: 15px 0;
   font-size: 35px;
   font-weight: 700;
-  color: #fc2901;
+  color: $primary-color;
   text-decoration: line-through;
 
   @media screen and (min-width: 768px) {
@@ -105,13 +105,17 @@
   }
 }
 
+.discount span {
+  background-color: $primary-color;
+}
+
 .btn {
   display: inline-block;
   margin: 15px 0;
   padding: 20px 50px 25px;
   font-size: 15px;
-  background-color: #00c340;
-  color: #fff;
+  background-color: $btn-color;
+  color: $color-8;
   text-align: center;
 
   font-weight: 700;

@@ -1,13 +1,22 @@
 .master__title {
   margin-bottom: 30px;
+  font-size: 22px;
 }
 
 .master__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .master__item:not(:last-child) {
-  margin-right: 20px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
 }
 
 .master__item {

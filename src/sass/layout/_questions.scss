@@ -6,29 +6,39 @@
   text-align: start;
 }
 
-.questions__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .questions__item-description {
+  width: 100%;
   padding: 10px;
-  background-color: black;
+  font-size: 14px;
+  border: none;
+  background-color: $color-5;
   border-radius: 10px;
   color: $color-8;
+  text-align: start;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .questions__item-description::before {
-  content: '+';
+  content: '\002B';
+  color: $color-8;
+  font-weight: 700;
+  margin-right: 5px;
 }
 
-.sub-description {
-  display: none;
-  padding: 10px;
+.active::before {
+  content: '\2212';
+}
+
+.panel {
+  margin: 5px;
+  padding: 0 18px;
+  background-color: $panel-color;
+  max-height: 0;
   border-radius: 10px;
-}
-
-.is-hidden {
-  display: block;
-  background-color: gray;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

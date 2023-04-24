@@ -1,9 +1,9 @@
 .footer {
-  background-color: #000;
+  background-color: $color-5;
 }
 
 .copyright {
-  font-size: 16px;
+  font-size: 12px;
   color: $color-8;
   line-height: 1.4em;
   margin-bottom: 20px;
@@ -12,10 +12,15 @@
 
 .footer__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .footer__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+
   position: relative;
   margin-right: 20px;
   &::before {
@@ -32,9 +37,20 @@
 
 .footer__link {
   color: $color-8;
+  transition: color 250ms linear;
+
+  &:hover {
+    color: $hover-color;
+  }
 }
 
 .footer__description {
   margin-top: 30px;
+  font-size: 12px;
+  line-height: 18px;
   color: $color-8;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
