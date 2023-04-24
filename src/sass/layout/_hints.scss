@@ -23,6 +23,12 @@
   }
 }
 
+.iframe-wrapper {
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
+}
+
 .hints__right iframe {
   @media screen and (max-width: 767px) {
     width: 270px;
@@ -30,19 +36,20 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 400px;
+    width: 350px;
     height: 200px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 90vw;
-    height: 500px;
+    width: 550px;
+    height: 300px;
   }
 }
 
 .hints__collections {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
   }
 }
@@ -63,6 +70,10 @@
     padding: 30px;
     width: 400px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 455px;
+  }
 }
 
 .hints__item:not(:last-child) {
@@ -73,18 +84,41 @@
   font-size: 14px;
   font-weight: 700;
 
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
   }
 }
 
 .hints__price {
   height: 150px;
+
+  @media screen and (min-width: 768px) {
+    height: 60px;
+  }
+}
+
+.hints__price .old-price {
+  @media screen and (min-width: 768px) {
+    margin-right: 22px;
+    font-size: 18px;
+  }
+}
+
+.hints__price .new-price {
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    font-size: 32px;
+  }
 }
 
 .hints__discount {
   font-size: 22px;
   line-height: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
 }
 
 .hints__item {
@@ -98,5 +132,27 @@
     background-image: url(../images/check-mark.png);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+.hints__collections .btn {
+  @media screen and (min-width: 768px) {
+    border-radius: 6px;
+    margin: 0;
+    padding: 13px 30px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+.after-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 9px;
+  color: $color-8;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }

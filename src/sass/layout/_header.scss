@@ -13,7 +13,7 @@
 .slide {
   display: flex;
   justify-content: space-between;
-  animation: slider 10s infinite alternate cubic-bezier(0.83, 0, 0.21, 0.99);
+  animation: slider 5s infinite alternate linear;
 
   @media screen and (max-width: 767px) {
     width: 700px;
@@ -43,6 +43,20 @@
     0% {
       transform: translateX(0px);
     }
+    25% {
+      transform: translateX(0px);
+    }
+    45% {
+      transform: translateX(0px);
+    }
+
+    55% {
+      transform: translateX(-470px);
+    }
+
+    75% {
+      transform: translateX(-470px);
+    }
 
     100% {
       transform: translateX(-470px);
@@ -55,6 +69,20 @@
     0% {
       transform: translateX(180px);
     }
+    25% {
+      transform: translateX(180px);
+    }
+    45% {
+      transform: translateX(180px);
+    }
+
+    55% {
+      transform: translateX(-520px);
+    }
+
+    75% {
+      transform: translateX(-520px);
+    }
 
     100% {
       transform: translateX(-520px);
@@ -66,6 +94,20 @@
   @keyframes slider {
     0% {
       transform: translateX(380px);
+    }
+    25% {
+      transform: translateX(380px);
+    }
+    45% {
+      transform: translateX(380px);
+    }
+
+    55% {
+      transform: translateX(-525px);
+    }
+
+    75% {
+      transform: translateX(-525px);
     }
 
     100% {
