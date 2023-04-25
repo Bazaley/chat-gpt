@@ -1,34 +1,31 @@
 .header {
-  padding: 10px 0 0;
+  padding: 30px 0 0;
   background-color: $bg-color;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding: 20px 0;
+    padding: 40px 0 0;
   }
-}
-.slide-wrapper {
-  overflow: hidden;
 }
 
 .slide {
-  display: flex;
-  justify-content: space-between;
-  animation: slider 5s infinite alternate linear;
+  position: relative;
+}
 
-  @media screen and (max-width: 767px) {
-    width: 700px;
-  }
+.limited {
+  animation: lim 6s infinite alternate linear;
+}
 
-  @media screen and (min-width: 768px) {
-    width: 1000px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+.use {
+  left: 100%;
+  animation: us 6s infinite 0.1s alternate linear;
 }
 
 .paragraph {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
   font-size: 15px;
   font-weight: 800;
   color: $color-8;
@@ -38,80 +35,48 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  @keyframes slider {
-    0% {
-      transform: translateX(0px);
-    }
-    25% {
-      transform: translateX(0px);
-    }
-    45% {
-      transform: translateX(0px);
-    }
+@keyframes lim {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 0;
+  }
+  45% {
+    right: 0;
+  }
 
-    55% {
-      transform: translateX(-470px);
-    }
+  55% {
+    right: 100%;
+  }
+  75% {
+    right: 100%;
+  }
 
-    75% {
-      transform: translateX(-470px);
-    }
-
-    100% {
-      transform: translateX(-470px);
-    }
+  100% {
+    right: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  @keyframes slider {
-    0% {
-      transform: translateX(180px);
-    }
-    25% {
-      transform: translateX(180px);
-    }
-    45% {
-      transform: translateX(180px);
-    }
-
-    55% {
-      transform: translateX(-520px);
-    }
-
-    75% {
-      transform: translateX(-520px);
-    }
-
-    100% {
-      transform: translateX(-520px);
-    }
+@keyframes us {
+  0% {
+    left: 100%;
   }
-}
+  25% {
+    left: 100%;
+  }
+  45% {
+    left: 100%;
+  }
 
-@media screen and (min-width: 1200px) {
-  @keyframes slider {
-    0% {
-      transform: translateX(380px);
-    }
-    25% {
-      transform: translateX(380px);
-    }
-    45% {
-      transform: translateX(380px);
-    }
+  55% {
+    left: 0;
+  }
+  75% {
+    left: 0;
+  }
 
-    55% {
-      transform: translateX(-525px);
-    }
-
-    75% {
-      transform: translateX(-525px);
-    }
-
-    100% {
-      transform: translateX(-525px);
-    }
+  100% {
+    left: 0;
   }
 }

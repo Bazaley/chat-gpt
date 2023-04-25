@@ -23,12 +23,6 @@
   }
 }
 
-.iframe-wrapper {
-  @media screen and (min-width: 768px) {
-    margin-left: 20px;
-  }
-}
-
 .hints__right iframe {
   @media screen and (max-width: 767px) {
     width: 270px;
@@ -49,8 +43,8 @@
 .hints__collections {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row-reverse;
   }
 }
 
@@ -60,13 +54,10 @@
   background-color: $color-8;
   border-radius: 10px;
   text-align: start;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    margin-right: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin: 0 auto;
+    margin: 0 20px 0 0;
     padding: 30px;
     width: 400px;
   }

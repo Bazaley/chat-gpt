@@ -21,15 +21,22 @@
   }
 }
 
+.image {
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
 .image-wrapper-1 {
   @media screen and (max-width: 767px) {
-    margin-top: -100px;
+    margin-top: -115px;
   }
 }
 
 .image-wrapper-2 {
   @media screen and (max-width: 767px) {
-    margin-top: -170px;
+    margin-top: -195px;
   }
 
   @media screen and (min-width: 768px) {
@@ -38,7 +45,7 @@
 }
 
 .image-wrapper-3 {
-  margin: -153px auto 0;
+  margin: -170px auto 0;
   @media screen and (min-width: 768px) {
     margin: -295px auto 0;
     width: 600px;
@@ -53,28 +60,29 @@
 .comment-wrapper-bottom {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin: -250px auto 0;
+    margin: -250px auto -100px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin: -350px auto 0;
+    margin: -350px auto -100px;
   }
 }
 
 .image-wrapper-4 {
   @media screen and (max-width: 767px) {
-    margin-top: -170px;
+    margin-top: -220px;
   }
 }
 
 .image-wrapper-5 {
   @media screen and (max-width: 767px) {
-    margin-top: -170px;
+    margin-top: -220px;
   }
 }
 
 .image-wrapper-6 {
   @media screen and (max-width: 767px) {
-    margin-top: -170px;
+    margin-top: -200px;
+    margin-bottom: -100px;
   }
 }
