@@ -4,7 +4,7 @@
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding: 40px 0 0;
+    padding: 50px 0 0;
   }
 }
 
@@ -23,7 +23,7 @@
 
 .paragraph {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   text-align: center;
   width: 100%;
   font-size: 15px;
@@ -32,6 +32,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    bottom: 10px;
   }
 }
 
